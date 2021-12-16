@@ -7,9 +7,10 @@
  */
 
 namespace App\classes;
+use App\classes\Database;
 
 
-class Auth
+class Auth extends  Database
 {
     private $email;
     private $password;
@@ -20,7 +21,9 @@ class Auth
 
 
     public function __construct($data=null)
+
     {
+        $this->link =$this->connection();
         if ($data)
         {
             $this->email=$data['email'];
@@ -34,7 +37,7 @@ class Auth
     }
     public function login()
     {
-        $this->link = mysqli_connect('localhost','root','','php_290581');
+
         if($this->link)
         {
             $this->sql ="SELECT * FROM users WHERE email ='$this->email ' AND password = '$this->password' ";

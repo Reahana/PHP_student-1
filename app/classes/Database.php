@@ -25,7 +25,7 @@ class Database
         $this->hostName = 'localhost';
         $this->userName ='root';
         $this->password ='';
-        $this->dbName ='php_290581';
+        $this->dbName ='php_student';
         $this->link = mysqli_connect( $this->hostName,$this->userName,$this->password ,$this->dbName);
         if ($this->link)
         {

@@ -38,6 +38,12 @@ else if (isset($_GET['status'])) {
         $subjects=$subject ->getAllSubject();
         include 'allSubject.php';
     }
+    if ($_GET['status']== 'manageSubject')
+    {
+        $subject = new Subject();
+        $subjects=$subject ->getAllSubject();
+        include 'manageSubject.php';
+    }
 
 }
 else if(isset($_GET['delete']))

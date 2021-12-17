@@ -19,7 +19,7 @@
             <li><a href="addUser.php" class="nav-link">Add Users </a></li>
             <li><a href="action.php?status=manageAll" class="nav-link">All Users </a></li>
             <li><a href="addSubject.php" class="nav-link">Add Subject </a></li>
-            <li><a href="action.php?status=allSubject" class="nav-link">All Subject </a></li>
+            <li><a href="action.php?status=manageSubject" class="nav-link">All Subject </a></li>
             <?php } else if ($_SESSION['user_type']== 2) { ?>
             <li><a href="action.php?status=manage" class="nav-link">All Student </a></li>
             <li><a href="action.php?status=allSubject" class="nav-link">All Subject </a></li>

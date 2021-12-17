@@ -58,6 +58,27 @@ else if(isset($_GET['edit']))
     include 'edit.php';
 
 }
+else if(isset($_GET['deleteSub']))
+{
+    $subject = new Subject();
+    $subject->delete($_GET['deleteSub']);
+}
+else if(isset($_GET['editSub']))
+{
+    $subject = new Subject();
+    $subjectInfo=$subject->getAllSubjectById($_GET['editSub']);
+    include 'subjectEdit.php';
+
+}
+else if(isset($_POST['subEdit']))
+{
+    $subject = new Subject($_POST);
+    $subjectInfo=$subject->getAllSubjectById($_POST['id']);
+    $message=$subject->updateSubject($subjectInfo);
+    $subjects=$subject->getAllSubject();
+    include 'manageSubject.php';
+}
+
 else if(isset($_POST['btnEdit']))
 {
     $user = new User($_POST);

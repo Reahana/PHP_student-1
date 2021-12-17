@@ -17,22 +17,22 @@ else if ($_SESSION['user_type'] == 3 || $_SESSION['user_type'] == 2)
             <div class="col-md-10 mx-auto">
                 <div class="card">
                     <div class="card-header">
-                        <h3>Add Subject Form</h3>
+                        <h3>Edit Subject </h3>
                     </div>
                     <div class="card-body">
                         <h3 class="text-success text-center"><?php echo isset($message) ? $message : '';  ?></h3>
                         <form action="action.php" method="post" >
-                            <input type="hidden" name="id" value="<?php echo $studentInfo['id']?>"/>
+                            <input type="hidden" name="id" value="<?php echo $subjectInfo['id']?>"/>
                             <div class="form-group row">
                                 <label for="" class="col-form-label col-md-3 ">Subject:</label>
                                 <div class="col-md-9 ">
-                                    <input type="text" name="subject" class="form-control" required/>
+                                    <input type="text" name="subject" value="<?php echo $subjectInfo['name']?>" class="form-control" required/>
                                 </div>
                             </div>
                             <d iv class="form-group row">
                                 <label for="" class="col-form-label col-md-3 "></label>
                                 <div class="col-md-9">
-                                    <input type="submit" name="subjectBtn" value="Edit" class="btn btn-outline-info btn-block"/>
+                                    <input type="submit" name="subEdit" value="Edit" class="btn btn-outline-info btn-block"/>
                                 </div>
                     </div>
                     </form>

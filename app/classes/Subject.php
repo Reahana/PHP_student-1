@@ -101,7 +101,7 @@ class Subject extends  Database
 
         if ($this->link)
         {
-            $this->sql ="Update subjects SET name='$this->name' WHERE  id= '$subjectInfo[id]'";
+            $this->sql ="Update subjects SET name='$this->subject' WHERE  id= '$subjectInfo[id]'";
             if (mysqli_query($this->link ,$this->sql))
             {
                 return 'User info update successfully';

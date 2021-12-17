@@ -89,7 +89,7 @@ class User  extends Database
    {
        if ($this->link)
        {
-           $this->sql ="SELECT * FROM users";
+           $this->sql ="SELECT * FROM users WHERE  user_type != 1";
            if (mysqli_query($this->link ,$this->sql))
            {
                $this->queryResult = mysqli_query($this->link ,$this->sql);

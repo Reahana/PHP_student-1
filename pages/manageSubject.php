@@ -33,8 +33,8 @@ if (!isset($_SESSION['id']))
                                 <tr>
                                     <td><?php echo  $subject['subject'];?></td>
                                     <td>
-                                        <a href="action.php?editSub=<?php echo $user['id']?>" class="btn btn-outline-warning ">Edit</a>
-                                        <a href="action.php?deleteSub=<?php echo $user['id']?>" onclick=" return confirm('Are you sure to delete this ?')" class="btn btn-outline-danger">Delete</a>
+                                        <a href="action.php?editSub=<?php echo $subject['id']?>" class="btn btn-outline-warning ">Edit</a>
+                                        <a href="action.php?deleteSub=<?php echo $subject['id']?>" onclick=" return confirm('Are you sure to delete this ?')" class="btn btn-outline-danger">Delete</a>
                                     </td>
                                 </tr>
                             <?php } ?>

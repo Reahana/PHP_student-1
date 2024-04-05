@@ -5,7 +5,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>PHP_290581</title>
+    <title>PHP User Role</title>
     <link rel="stylesheet" href="../assets/css/bootstrap.css"/>
 </head>
 <body>
@@ -13,8 +13,9 @@
 <!-- =============== Menu Start ================== -->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container">
-        <a href="home.php" class="navbar-brand">LOGO</a>
+        <a href="#" class="navbar-brand">Logo</a>
         <ul class="navbar-nav ml-auto">
+            <li><a href="dashboard.php" class="nav-link">Dashboard </a></li>
             <?php if ($_SESSION['user_type'] == 1)   { ?>
             <li><a href="addUser.php" class="nav-link">Add Users </a></li>
             <li><a href="action.php?status=manageAll" class="nav-link">All Users </a></li>

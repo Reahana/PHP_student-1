@@ -8,7 +8,9 @@ if (isset($_SESSION['id']))
 
 <section class="py-5 text-center">
     <div class="container">
+        <h1 class="text-center py-3 text-primary">Welcome to PHP User Role </h1>
         <div class="row">
+
             <div class="col-md-8 mx-auto">
                 <div class="card">
                     <div class="card-header">

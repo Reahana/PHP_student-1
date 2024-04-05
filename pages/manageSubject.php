@@ -5,7 +5,7 @@ if (!isset($_SESSION['id']))
     header('Location: login.php');
 }
 ?>
-    <section class="py-5 text-center">
+    <section class="py-5 text-center" style="min-height: 84vh">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 mx-auto">
